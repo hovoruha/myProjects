@@ -1,0 +1,204 @@
+/*__main resets__________________*/
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: 'Courier New';
+	background-color: #FFF2A7;
+	box-sizing: border-box;
+}
+
+ul, li{
+	list-style: none;
+}
+
+a, a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+a i{
+	margin-right: 3px;
+}
+
+a:hover{
+	color: red;
+}
+
+/*_______________________________*/
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.container .left{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
+	height: auto;
+	min-width: 200px;
+	border: 1px solid black;
+	margin: 10px 0 10px 10px;
+	padding: 10px;
+}
+
+input[type="button"]{
+	padding: 2px;
+	margin: 5px 0;
+}
+
+input[type="button"]:hover{
+	cursor: pointer;
+}
+
+input[type="submit"]{
+	background-color: black;
+	color: white;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+.container .right{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
+	height: auto;
+	min-width: 200px;
+	border: 1px solid red;
+	margin: 10px 0 10px 10px;
+	padding: 10px;
+}
+
+.form-item{
+	margin-bottom: 10px;
+}
+
+.form-item > input{
+	width: 250px;
+	/*border: 1px solid red;*/
+}
+
+.form-item input[type='submit']{
+	visibility: hidden;
+}
+
+.form-item.show input[type='submit']{
+	visibility: visible;
+}
+
+.form-item input[type='submit'],
+.form-item input[type='radio']{
+	width: auto;
+	padding: 0 10px;
+}
+
+.form-item input[type='radio']:hover{
+	cursor: pointer;
+}
+
+.btn-wrap{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.btn{
+	display: block;
+	margin: 10px 10px 20px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.btn .title{
+	padding: 10px;
+	text-align: center;
+	text-justify: center;
+	font-weight: bold;
+}
+
+.btn img{
+	width: 250px;
+	height: 180px;
+}
+
+.btn.drop{
+	padding: 2px 5px 2px 5px;
+}
+
+.btn.row{
+	display: flex;
+	padding: 2px 5px 2px 5px;
+}
+
+.item{
+	margin: 0 10px;
+}
+
+.table{
+	border-collapse: collapse;
+}
+
+.table tr th{
+	text-align: center;
+	padding: 2px 30px;
+}
+
+.table tr td{
+	padding: 0 20px 0 0;
+	border-bottom: 1px solid lightgrey;
+}
+
+.table tr:hover{
+	font-weight: bold;
+	color: blue;
+	background-color: lightgrey;
+}
+
+.table tr td:last-child,
+.table tr td:first-child{
+	text-align: center;
+}
+
+.table-header{
+	color: blue;
+	border-bottom: 3px double black;
+}
+
+.lnk{
+	font-weight: bold;
+}
+
+/* .lnk:hover{ */
+	/* cursor: pointer; */
+	/* color: red; */
+/* } */
+
+.edit{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.edit:hover,
+.edit:last-child:hover{
+	color: blue;
+	cursor: pointer;
+	/* background-color: lightgrey; */
+}
+
+.edit i{
+	margin-right: 5px;
+}

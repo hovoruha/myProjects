@@ -1,0 +1,66 @@
+<div class="btn-wrap">
+	<div class="btn drop">
+		<input id="back" type="button" value="return to Main">	
+	</div>
+</div>
+<div class="left">
+	<form id="entry-form" class="form">
+		<li class="form-item"><input id="id" name="id" type="text" placeholder="id" disabled="true"></li>
+		<li class="form-item"><input id="user" name="user" type="text" placeholder="user"></li>
+		<li class="form-item"><input id="pass" name="pass" type="text" placeholder="pass"></li>
+		<li class="form-item"><input id="mail" name="mail" type="text" placeholder="mail"></li>
+		<li class="form-item"><input id="admin" name="admin" type="text" placeholder="admin"></li>
+		<li	class="form-item">
+			<label for="update">update</label>
+			<input id="update" type="radio" name="op">
+		</li>
+		<li	class="form-item">
+			<label for="addnew">insert</label>
+			<input id="addnew" type="radio" name="op">
+		</li>
+		<li class="form-item"><input type="submit" value="UPDATE"></li>
+	</form>
+</div>
+<div class="btn-wrap">
+	<div class="btn row">
+		<p>folositi sagetile pentru manipularea tabelului...</p>
+		<li class="item">
+			<select id="contentAmount">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</select>
+		</li>
+		<li class="item"><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+		<li class="item"><a href="#"><i class="fas fa-angle-left"></i></a></li>
+		<li class="item">
+			<span class="page-btn">1</span>
+			<span class="page-btn">2</span>
+			<span class="page-btn">3</span>
+		</li>
+		<li class="item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+		<li class="item"><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+	</div>
+</div>
+<div class="right">
+	<table id="table" class="table">
+		<thead class="table-header">
+			<tr>
+				<th>id</th>
+				<th>username</th>
+				<th>password</th>
+				<th>email</th>
+				<th>admin</th>
+			</tr>
+		</thead>
+		<tbody id="table-body"></tbody>
+		<!-- <tr> -->
+			<!-- <td><a href="#"><i class="far fa-edit"></i>1</a></td> -->
+			<!-- <td>octavian.hovoruha</td> -->
+			<!-- <td>hovoruha460076</td> -->
+			<!-- <td>octavian.hovoruha@gmail.com</td> -->
+			<!-- <td>1</td> -->
+		<!-- </tr> -->
+	</table>
+</div>
